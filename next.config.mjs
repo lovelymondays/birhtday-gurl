@@ -1,14 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export", // REQUIRED for Cloudflare Pages static
   typescript: {
     ignoreBuildErrors: true,
   },
   images: {
     unoptimized: true,
   },
-
-  // REQUIRED for Cloudflare
-  output: "standalone",
 };
 
 export default nextConfig;

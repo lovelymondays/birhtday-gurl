@@ -6,6 +6,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-}
 
-export default nextConfig
+  // REQUIRED for Cloudflare
+  output: "standalone",
+};
+
+export default nextConfig;
